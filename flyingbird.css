@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    overflow: hidden;
+   
+  background-image:url("crater.png");
+   width:100%;
+   height:700px;
+   
+  }
+  img{
+    width:300px;
+    height:200px;
+    margin:20px;
+  }
+  
+  .clouds {
+    
+    background-repeat: repeat-x;
+    
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    color: blue;
+    top: 0;
+    z-index: 0;
+    animation: moveClouds 20s linear infinite  ;
+  }
+  
+  @keyframes moveClouds {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .bird {
+    /* background-image: url('bluebird.gif'); Add the path to your bird image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 1000px; 
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    animation: flyBird 10s linear infinite ;
+  }
+  
+  @keyframes flyBird {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-50px) translateX(200px);
+    }
+    50% {
+      transform: translateY(-100px) translateX(750px);
+    }
+    75% {
+      transform: translateY(-200px) translateX(900px);
+    }
+    100% {
+      transform: translateY(-300px) translateX(1100px);
+    }
+  }
+  .white{
+    width:100px;
+    height: 70px;
+  }
+  .team{
+    margin-top:34%;
+    margin-left:250px;
+    width:200px;
+    height:140px;
+  }
